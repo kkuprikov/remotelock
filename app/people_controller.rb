@@ -10,7 +10,6 @@ class PeopleController
   end
 
   def normalize
-    # repository = BaseRepository.new()
     PeopleFormatterService.new(repository: repository, order: params[:order]).call
   end
 
